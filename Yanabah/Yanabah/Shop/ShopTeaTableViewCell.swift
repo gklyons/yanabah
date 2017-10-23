@@ -10,15 +10,14 @@ import UIKit
 
 class ShopTeaTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var tea: Tea! {
+        didSet {
+            self.updateUI()
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func updateUI() {
+        
     }
-
+    
 }
