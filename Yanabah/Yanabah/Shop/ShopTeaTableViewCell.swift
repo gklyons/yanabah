@@ -10,6 +10,10 @@ import UIKit
 
 class ShopTeaTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var teaImageView: UIImageView!
+    @IBOutlet weak var teaNameLabel: UILabel!
+    @IBOutlet weak var teaPriceLabel: UILabel!
+    
     var tea: Tea! {
         didSet {
             self.updateUI()
@@ -18,6 +22,14 @@ class ShopTeaTableViewCell: UITableViewCell {
 
     func updateUI() {
         
+        teaImageView.image = tea.images?.first
+        teaNameLabel.text = tea.name
+        
+        if let price = tea.price {
+            teaPriceLabel.text = "$\(price)"
+        } else {
+            teaPriceLabel.text = ""
+        }
     }
     
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class TeaDetailTableViewController: UITableViewController {
 
+    @IBOutlet weak var teaImagesView: UIImageView!
+    
     var tea: Tea!
     
     override func viewDidLoad() {

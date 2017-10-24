@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopTeaCell" rowHeight="445" id="LYO-s6-Mtc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopTeaCell" rowHeight="445" id="LYO-s6-Mtc" customClass="ShopTeaTableViewCell" customModule="Yanabah" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="445"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LYO-s6-Mtc" id="NxB-u8-czI">
@@ -59,6 +59,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="teaImageView" destination="EF6-zk-AHo" id="WYG-0D-wt5"/>
+                                    <outlet property="teaNameLabel" destination="ZKB-kb-RBz" id="q4J-hZ-f6p"/>
+                                    <outlet property="teaPriceLabel" destination="4YC-oy-hTO" id="fBY-vp-3QB"/>
                                     <segue destination="HDW-xW-VA0" kind="show" identifier="ShowTeaDetail" id="cc5-Bc-SKZ"/>
                                 </connections>
                             </tableViewCell>
@@ -87,7 +90,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeaDetailCell" rowHeight="100" id="WWH-IX-dgj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeaDetailCell" rowHeight="100" id="WWH-IX-dgj" customClass="TeaDetailTableViewCell" customModule="Yanabah" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="403" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WWH-IX-dgj" id="U3U-Sy-XhP">
@@ -128,6 +131,11 @@
                                         <constraint firstItem="lfT-D6-QKY" firstAttribute="centerY" secondItem="U3U-Sy-XhP" secondAttribute="centerY" id="vfG-p4-dLg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="teaDescriptionLabel" destination="twm-eH-3Ax" id="I5z-bq-tGi"/>
+                                    <outlet property="teaDetailDescriptionLabel" destination="PIH-LA-Gdj" id="KAN-oR-H9e"/>
+                                    <outlet property="teaNameLabel" destination="erN-6p-rgA" id="GkE-2Q-pRM"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyButtonCell" id="oRi-l2-aJc">
                                 <rect key="frame" x="0.0" y="503" width="375" height="44"/>
@@ -161,6 +169,9 @@
                             <outlet property="delegate" destination="HDW-xW-VA0" id="IdQ-eG-fUG"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="teaImagesView" destination="GqT-Z6-dlL" id="rTM-iQ-kwr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCj-bq-G9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

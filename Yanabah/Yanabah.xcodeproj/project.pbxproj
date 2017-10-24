@@ -10,6 +10,7 @@
 		D4254C321F9E84E000B7F7F8 /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4254C311F9E84E000B7F7F8 /* ShopTableViewController.swift */; };
 		D4254C341F9E850800B7F7F8 /* ShopTeaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4254C331F9E850800B7F7F8 /* ShopTeaTableViewCell.swift */; };
 		D4254C371F9E8DA600B7F7F8 /* TeaDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4254C361F9E8DA600B7F7F8 /* TeaDetailTableViewController.swift */; };
+		D4254C3C1F9EDBC800B7F7F8 /* TeaDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4254C3B1F9EDBC800B7F7F8 /* TeaDetailTableViewCell.swift */; };
 		D4335E5F1F9916AE004D6116 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4335E5E1F9916AE004D6116 /* Tea.swift */; };
 		D47B59C61F8E6B1C00648733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B59C51F8E6B1C00648733 /* AppDelegate.swift */; };
 		D47B59CD1F8E6B1C00648733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47B59CB1F8E6B1C00648733 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		D4254C311F9E84E000B7F7F8 /* ShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewController.swift; sourceTree = "<group>"; };
 		D4254C331F9E850800B7F7F8 /* ShopTeaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTeaTableViewCell.swift; sourceTree = "<group>"; };
 		D4254C361F9E8DA600B7F7F8 /* TeaDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaDetailTableViewController.swift; sourceTree = "<group>"; };
+		D4254C3B1F9EDBC800B7F7F8 /* TeaDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D4335E5E1F9916AE004D6116 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 		D47B59C21F8E6B1C00648733 /* Yanabah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yanabah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47B59C51F8E6B1C00648733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +56,17 @@
 			isa = PBXGroup;
 			children = (
 				D4254C361F9E8DA600B7F7F8 /* TeaDetailTableViewController.swift */,
+				D4254C381F9EDAD700B7F7F8 /* Views */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		D4254C381F9EDAD700B7F7F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4254C3B1F9EDBC800B7F7F8 /* TeaDetailTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D458D2C51F9002B900A840CC /* Models */ = {
@@ -190,6 +201,7 @@
 				D47B59C61F8E6B1C00648733 /* AppDelegate.swift in Sources */,
 				D4254C321F9E84E000B7F7F8 /* ShopTableViewController.swift in Sources */,
 				D4254C371F9E8DA600B7F7F8 /* TeaDetailTableViewController.swift in Sources */,
+				D4254C3C1F9EDBC800B7F7F8 /* TeaDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
